@@ -62,9 +62,10 @@ header .logo img {
   width: 300px;
   transition: 1s;
 }
+
 header.scrolled .logo img {
   width: 80px;
-left:0;
+  left:0;
 }
 
 
@@ -283,6 +284,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 800px){
+  hr{
+    display: none;
+  }
+}
+
 .middle{
   border-bottom-style: ridge;
 }
@@ -396,9 +403,7 @@ header.scrolled #cover{
     transform: scale(0.6);
     opacity: 50%;
     float: right;
-
 }
-
 
 #cover:hover{
    width: 70%;
@@ -408,6 +413,26 @@ header.scrolled #cover{
    width: 80%;
    opacity: 100%;
 }
+
+@media screen and (max-width: 600px){
+  #cover{
+    top: 90%;
+    width: 100%;
+    padding: 2.5px;
+    box-shadow: 0 10px 20px #7ff, 0 0 0 10px #ffffffeb;
+    border-radius: 20px;
+  }
+  #cover:hover{
+     width: 100%;
+     opacity: 1.0;
+  }
+  #cover:active{
+     width: 100%;
+     opacity: 1.0;
+  }
+}
+
+
 
 
 /*spyglass*/
