@@ -120,14 +120,14 @@ nav ul li a {
   transition: 1s;
   background-color: #188;
 }
-nav ul li a.active{
+nav ul li a:active{
   background: #fff;
   color:#262626;
 }
 nav ul li a:hover{
   border-bottom: 2px solid white;
-
 }
+
 
 
 /*JUST ADDED*/
@@ -625,6 +625,12 @@ button span:before, button span:after
   flex-grow: 1.5;
   color: white;
   background-color: #188;
+}
+
+.locations > a:active {
+  background-color: #188;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /*This removes underlines from url links*/
