@@ -38,7 +38,7 @@ header img.banner{
   left: 0;
   height: 100%;
   width: 100%;
-  transition: 1s;
+  transition: 2s;
 }
 
 header.scrolled img.banner{
@@ -48,12 +48,12 @@ header.scrolled img.banner{
 header .logo{
   position: absolute;
   top: calc(50% - 150px);
-  left: calc(47% - 250px);
+  left: calc(50% - 150px);
   transition: 1s;
 }
 header.scrolled .logo{
   position: relative;
-  top: 10px;
+  top: 15px;
   left: 0;
   float: left;
 
@@ -64,7 +64,7 @@ header .logo img {
 }
 header.scrolled .logo img {
   width: 80px;
-
+left:0;
 }
 
 
@@ -309,7 +309,7 @@ button.button1 {
   width: auto;
   height: 50px;
   background-color: red;
-  opacity: 70%;
+  opacity: 30%;
   color: white;
   padding: 15px;
   text-align: center;
@@ -362,6 +362,7 @@ button.button1:hover {
 {
     display: table-cell;
     vertical-align: middle;
+
 }
 
 input, button
@@ -372,30 +373,44 @@ input, button
     margin: 0;
     border: 0;
     background-color: transparent;
+    text-align:center;
 }
 
 header.scrolled #cover{
-  top: -20px;
+  display: none;
 }
 
+/*searchbar*/
 #cover
 {
     position: absolute;
     top: 80%;
     left: 0;
     right: 0;
-    width: auto;
+    width: 50%;
     padding: 5px;
     margin: -83px auto 0 auto;
     background-color: #188;
     border-radius: 20px;
     box-shadow: 0 10px 40px #7ff, 0 0 0 20px #ffffffeb;
     transform: scale(0.6);
-    opacity: 80%;
+    opacity: 50%;
     float: right;
 
 }
 
+
+#cover:hover{
+   width: 70%;
+   opacity: 80%;
+}
+#cover:active{
+   width: 80%;
+   opacity: 100%;
+}
+
+
+/*spyglass*/
 form
 {
     height: 96px;
@@ -536,14 +551,6 @@ button span:before, button span:after
 
 
 
-.locations{
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-}
-
 /*@font-face {
     font-family: 'Romande ADF No2 Std';
     src: url('RomandeADFNo2Std-DemiBoldItalic.eot');
@@ -557,9 +564,19 @@ button span:before, button span:after
     font-display: swap;
 }*/
 
-/*fix padding issue*/
+.locations{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+
 .locations > a{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
   background:rgba(50, 255, 255, 0.4);
+  color:rgba(25, 55, 125);
   margin: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -573,8 +590,19 @@ button span:before, button span:after
   border-radius: 25px;
   border-color: red;
   border: thin;
+  text-align: center;
 }
 
+.locations > a:hover{
+  flex-grow: 1.5;
+  color: white;
+  background-color: #188;
+}
+
+/*This removes underlines from url links*/
+a{
+    text-decoration-color: transparent;
+}
 
 
 
@@ -759,7 +787,6 @@ footer{
   }
  
 }
-
 
 
 
