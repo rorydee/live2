@@ -186,7 +186,7 @@ section{
 
 @media (max-width: 500px){
 section{
-  padding: 10%;
+  padding: 5%;
   }
 }
 
@@ -410,7 +410,10 @@ header.scrolled #cover{
    opacity: 80%;
 }
 #cover:active{
-   width: 80%;
+  background-color: #fff;
+}
+#cover:focus{
+   width: 100%;
    opacity: 100%;
 }
 
@@ -643,7 +646,10 @@ a{
 
 
 
-
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 
 footer{ 
