@@ -1,0 +1,68 @@
+nav{
+  position: relative;
+}
+
+nav ul{
+  position: relative;
+  float: right;
+  
+}
+
+
+nav ul{
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100px);
+}
+header.scrolled nav ul{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  overflow: hidden;
+}
+
+
+/*add at media here with the header.scrolled attribute to try and make the menu responsive?*/
+nav ul li{
+  list-style: none;
+}
+nav ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 1s;
+  background-color: #188;
+}
+nav ul li a:active{
+  background: #fff;
+  color:#262626;
+}
+nav ul li a:hover{
+  border-bottom: 2px solid white;
+}
+
+
+
+/*JUST ADDED*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 780px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: 780px){
+  nav ul {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}

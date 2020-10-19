@@ -640,8 +640,48 @@ a{
 
 
 
+.accordion {
+  display: inline-flex;
+  background-color: #188;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px 40px;
+  margin:20px;
+  width: 400px;
+  height: 50px;
+  max-width: 96%;
+  border: none;
+
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 40px;
+  font-size: 200%
+}
 
 
+/*FIX THIS*/
+
+.panel {
+  padding: 0 8px;
+  display: none;
+  background-color: #188;
+  overflow: hidden;
+}
+
+.panel1 {
+ display:;
+}
+
+.accordian1{
+  position: absolute;
+  z-index: 20;
+  
+  background-color: grey;
+}
+button > .accordian1 > p{
+  top: 0px !important;
+}
 
 
 
